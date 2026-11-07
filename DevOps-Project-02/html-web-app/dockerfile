@@ -1,5 +1,5 @@
 FROM tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
 RUN pwd
-COPY DevOps-Project-02/html-web-app/* /usr/local/tomcat/webapps/*
+COPY . /usr/local/tomcat/webapps/*
 CMD ["catalina.sh", "run"]
